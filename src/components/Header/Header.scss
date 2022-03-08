@@ -1,21 +1,16 @@
 @import '../../index.scss';
 
 .Header {
-  display: flex;
-  flex-direction: row;
-
-  .LeftHeader {
-  }
-
-  .RightHeader {
-  }
+  padding-left: 40px;
+  padding-top: 20px !important;
+  padding-right: 40px;
 
   .HeaderName {
     font-weight: 500 !important;
   }
 
   @include respond-to('small') {
-    color: blue;
+    color: black;
   }
 
   @include respond-to('large') {
@@ -24,6 +19,30 @@
 
   .navLink {
     text-decoration: none;
-    color: $black;
+    padding: 0;
+    color: $black !important;
   }
+
+  .navLink:hover {
+    color: $hover !important;
+  }
+
+  .nav-link {
+    padding-top: 0px;
+  }
+
+  .navbar {
+    padding-top: 20px;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    padding-top: 0px;
+  }
+
+  .social-icon:hover {
+    fill: $hover;
+  }
+  
 }

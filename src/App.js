@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Grid from './components/Grid'
 
 function App () {
   return (
@@ -18,6 +19,7 @@ function App () {
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
+      <Grid />
     </React.Fragment>
   )
 }

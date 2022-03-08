@@ -4,14 +4,15 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import './Header.scss'
 
+import { ReactComponent as LinkedinLogo } from '../../assets/linkedin.svg'
+import { ReactComponent as InstagramLogo } from '../../assets/instagram.svg'
+
 function Header () {
   return (
-    <Navbar collapseOnSelect expand='sm'>
-      <Navbar.Brand>
-        <Nav.Link as={NavLink} to='/' style={{ color: 'black' }}>
-          <h2 className='HeaderName'>Steph Leung</h2>
-        </Nav.Link>
-      </Navbar.Brand>
+    <Navbar collapseOnSelect expand='sm' className='Header'>
+      <Nav.Link as={NavLink} to='/' className='navLink'>
+        <h4 className='HeaderName'>Steph Leung</h4>
+      </Nav.Link>
 
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse
@@ -20,23 +21,23 @@ function Header () {
       >
         <Nav>
           <Nav.Item>
-            <Nav.Link as={NavLink} to='/about'>
-              About
+            <Nav.Link as={NavLink} to='/about' className='navLink'>
+              <h6>About</h6>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={NavLink} to='/contact'>
-              Contact
+            <Nav.Link as={NavLink} to='/contact' className='navLink'>
+              <h6>Contact</h6>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='https://instagram.com'>
-              Instagram
+            <Nav.Link href='https://www.instagram.com/x5t3ph/'>
+              <InstagramLogo className='social-icon' />
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href='https://linkedin.com'>
-              Linkedin
+            <Nav.Link href='https://www.linkedin.com/in/stephcyleung/'>
+              <LinkedinLogo className='social-icon' />
             </Nav.Link>
           </Nav.Item>
         </Nav>

@@ -1,5 +1,26 @@
+@import '../../index.scss';
+
 .Home {
+  margin-left: 154px;
+  margin-right: 154px;
+
   .Intro {
     font-weight: 700 !important;
+    margin-right: 90px;
+    margin-top: 120px;
+  }
+
+  .lulu {
+    color: $hover;
+    text-decoration: underline;
+  }
+
+
+  .Work {
+    .header {
+      margin-bottom: 30px;
+    }
+    
+    margin-top: 80px;
   }
 }
