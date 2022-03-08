@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.Header {
+  display: flex;
+  flex-direction: row;
+
+  .LeftHeader {
+  }
+
+  .RightHeader {
+  }
+
+  .HeaderName {
+    font-weight: 500 !important;
+  }
+
+  @include respond-to('small') {
+    color: blue;
+  }
+
+  @include respond-to('large') {
+    color: black;
+  }
+
+  .navLink {
+    text-decoration: none;
+    color: $black;
+  }
+}
