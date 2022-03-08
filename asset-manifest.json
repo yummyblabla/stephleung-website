@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/stephleung-website/static/css/main.d234ccea.css",
-    "main.js": "/stephleung-website/static/js/main.d27b3fc2.js",
-    "static/js/787.3eb1d877.chunk.js": "/stephleung-website/static/js/787.3eb1d877.chunk.js",
-    "index.html": "/stephleung-website/index.html",
-    "main.d234ccea.css.map": "/stephleung-website/static/css/main.d234ccea.css.map",
-    "main.d27b3fc2.js.map": "/stephleung-website/static/js/main.d27b3fc2.js.map",
-    "787.3eb1d877.chunk.js.map": "/stephleung-website/static/js/787.3eb1d877.chunk.js.map"
+    "main.css": "/static/css/main.d234ccea.css",
+    "main.js": "/static/js/main.737e8fbd.js",
+    "static/js/787.3eb1d877.chunk.js": "/static/js/787.3eb1d877.chunk.js",
+    "index.html": "/index.html",
+    "main.d234ccea.css.map": "/static/css/main.d234ccea.css.map",
+    "main.737e8fbd.js.map": "/static/js/main.737e8fbd.js.map",
+    "787.3eb1d877.chunk.js.map": "/static/js/787.3eb1d877.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d234ccea.css",
-    "static/js/main.d27b3fc2.js"
+    "static/js/main.737e8fbd.js"
   ]
 }
