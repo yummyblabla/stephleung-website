@@ -2,18 +2,28 @@ import React from 'react'
 
 import './Home.scss'
 
+import Recognition from './Recognition'
+import CommunityService from './CommunityService'
+import DesignThinking from './DesignThinking'
+import Work from './Work'
+
 function Home () {
   return (
     <div className='Home'>
-      <h1 className='Intro'>
-        Hello! I’m Steph -- a Product Designer currently at{' '}
-        <span className='lulu'>lululemon</span>.
-      </h1>
+      <div className='Intro'>
+        <h1 className='title'>
+          Hello! I’m Steph — a Product Designer currently at{' '}
+          <a href='https://www.lululemon.com/'>
+            <span className='lulu'>lululemon</span>
+          </a>
+          .
+        </h1>
+      </div>
 
-      <section id='work' className='Work'>
-        <h2 className='header'>Work</h2>
-        <h4>A showcase of my portfolio.</h4>
-      </section>
+      <Work />
+      <DesignThinking />
+      <Recognition />
+      <CommunityService />
     </div>
   )
 }
