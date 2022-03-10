@@ -1,4 +1,4 @@
-.Work {
+.CommunityService {
   max-width: 1200px;
   margin: 4rem auto;
 
@@ -10,11 +10,6 @@
     margin-bottom: 2rem;
   }
 
-  .lord-icon {
-    width: 80px;
-    height: 80px;
-  }
-
   .header {
     margin-bottom: 0.5rem;
     font-weight: bold !important;
@@ -22,12 +17,6 @@
 
   .description {
     margin-bottom: 1rem;
-  }
-
-  .work-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .work-card {
@@ -40,13 +29,5 @@
 
   .card-body {
     padding: 2rem 2.5rem;
-  }
-
-  .left {
-    margin-right: 1rem;
-  }
-
-  .right {
-    margin-top: 5rem;
   }
 }

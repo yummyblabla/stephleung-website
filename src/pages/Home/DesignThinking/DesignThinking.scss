@@ -1,4 +1,4 @@
-.Work {
+.DesignThinking {
   max-width: 1200px;
   margin: 4rem auto;
 
@@ -24,29 +24,7 @@
     margin-bottom: 1rem;
   }
 
-  .work-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .work-card {
-    margin-bottom: 4rem;
-  }
-
-  .card-title {
+  .card-second-title {
     font-weight: 600 !important;
-  }
-
-  .card-body {
-    padding: 2rem 2.5rem;
-  }
-
-  .left {
-    margin-right: 1rem;
-  }
-
-  .right {
-    margin-top: 5rem;
   }
 }
