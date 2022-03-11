@@ -1,0 +1,40 @@
+@import '../../index.scss';
+
+.Contact {
+  .title {
+    max-width: $desktop-max-width;
+    margin: 4rem auto;
+  }
+
+  .contact-description {
+    margin-bottom: 3rem;
+    line-height: 3rem;
+  }
+
+  .contact-section {
+    max-width: calc($desktop-max-width - 200px);
+    padding: 4rem 0; 
+  }
+
+  .background {
+    background-color: $background;
+  }
+
+  .top-ramp {
+    height: 7rem;
+    background-image: linear-gradient(to bottom right, $white 50%, $background calc(50% + 1px));
+  }
+
+  .bottom-ramp {
+    height: 7rem;
+    background-image: linear-gradient(to top left, $white 50%, $background calc(50% + 1px));
+  }
+
+
+  .send-button {
+    background-color: $hover;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+  }
+}

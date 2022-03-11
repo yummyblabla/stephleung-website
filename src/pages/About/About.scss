@@ -1,0 +1,44 @@
+@import '../../index.scss';
+
+.About {
+  margin: 4rem auto;
+
+  .intro {
+    max-width: $desktop-max-width;
+    margin: 4rem auto;
+  }
+  .title {
+    font-weight: 600 !important;
+  }
+
+  .about-section {
+    max-width: $desktop-max-width;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 2.5rem;
+  }
+
+  .top-ramp {
+    height: 7rem;
+    background-image: linear-gradient(to bottom right, $white 50%, $background calc(50% + 1px));
+  }
+
+  .bottom-ramp {
+    height: 7rem;
+    background-image: linear-gradient(to top left, $white 50%, $background calc(50% + 1px));
+  }
+
+  .background {
+    background-color: $background;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-image {
+    width: 75%;
+  }
+}

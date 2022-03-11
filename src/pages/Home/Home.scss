@@ -1,11 +1,10 @@
 @import '../../index.scss';
 
-$desktop-max-width: 1000px;
-
 .Home {
   .Intro {
     max-width: $desktop-max-width;
     margin: 4rem auto;
+    margin-bottom: 2rem;
   }
   
   .title {

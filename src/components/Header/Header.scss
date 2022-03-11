@@ -45,5 +45,8 @@
   .social-icon:hover {
     fill: $hover;
   }
-  
+
+  #no-underline {
+    text-decoration: none !important;
+  }
 }

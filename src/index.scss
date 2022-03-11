@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
 body {
   margin: 0;
@@ -18,12 +18,12 @@ code {
     monospace;
 }
 
+$desktop-max-width: 1000px;
 $hover: #ee4a7b;
 $black: #000000;
 $white: #ffffff;
-$grey-light: #9B9BA3;
-$background: #F3F3F3;
-
+$grey-light: #9b9ba3;
+$background: #f3f3f3;
 
 h1 {
   font-size: 48px !important;
@@ -54,11 +54,21 @@ p {
   font-size: 16px !important;
 }
 
+a {
+  text-decoration: none !important;
+  color: $black !important;
+}
 
 $breakpoints: (
-  'small':  ( min-width:  767px ),
-  'medium': ( min-width:  992px ),
-  'large':  ( min-width: 1200px )
+  'small': (
+    min-width: 767px,
+  ),
+  'medium': (
+    min-width: 992px,
+  ),
+  'large': (
+    min-width: 1200px,
+  ),
 ) !default;
 
 @mixin respond-to($breakpoint) {
@@ -69,10 +79,15 @@ $breakpoints: (
       @content;
     }
   }
- 
+
   // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
+}
+
+.active {
+  font-weight: 900 !important;
+  text-decoration: underline !important;
 }
