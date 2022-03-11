@@ -1,18 +1,27 @@
+@import '../Home.scss';
+
 .Recognition {
-  max-width: 1200px;
   margin: 4rem auto;
+  margin-bottom: 0;
 
   .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
   }
 
-  .lord-icon {
-    width: 80px;
-    height: 80px;
+  .title-with-background {
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom right,
+      $white 50%,
+      $background calc(50% + 1px)
+    );
+  }
+  .titlebar-with-background {
+    width: 100%;
+    background-color: $background;
   }
 
   .header {
@@ -26,5 +35,14 @@
 
   .container-title {
     font-weight: bold !important;
+  }
+
+  .background {
+    background-color: $background;
+  }
+
+  .recognition-section {
+    max-width: $desktop-max-width;
+    padding-bottom: 8rem;
   }
 }

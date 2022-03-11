@@ -22,12 +22,12 @@ function Header () {
         <Nav>
           <Nav.Item>
             <Nav.Link as={NavLink} to='/about' className='navLink'>
-              <h6>About</h6>
+              <p className='link'>About</p>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link as={NavLink} to='/contact' className='navLink'>
-              <h6>Contact</h6>
+              <p className='link'>Contact</p>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>

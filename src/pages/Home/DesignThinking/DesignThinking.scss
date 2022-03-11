@@ -1,13 +1,22 @@
+@import '../Home.scss';
+
 .DesignThinking {
-  max-width: 1200px;
-  margin: 4rem auto;
+  margin: 0 auto;
 
   .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+  }
+
+  .title-with-background {
+    width: 100%;
+    background-image: linear-gradient(
+      to top left,
+      $white 50%,
+      $background calc(50% + 1px)
+    );
   }
 
   .lord-icon {
@@ -26,5 +35,9 @@
 
   .card-second-title {
     font-weight: 600 !important;
+  }
+
+  .designthinking-section {
+    max-width: $desktop-max-width;
   }
 }

@@ -1,13 +1,23 @@
+@import '../Home.scss';
+
 .CommunityService {
-  max-width: 1200px;
   margin: 4rem auto;
+  margin-top: 0;
 
   .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+  }
+
+  .title-with-background {
+    width: 100%;
+    background-image: linear-gradient(
+      to top left,
+      $white 50%,
+      $background calc(50% + 1px)
+    );
   }
 
   .header {
@@ -23,11 +33,19 @@
     margin-bottom: 4rem;
   }
 
+  .card {
+    border: 0;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  }
   .card-title {
     font-weight: 600 !important;
   }
 
   .card-body {
     padding: 2rem 2.5rem;
+  }
+
+  .communityservice-section {
+    max-width: $desktop-max-width;
   }
 }

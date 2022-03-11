@@ -15,12 +15,14 @@ function CommunityService () {
   return (
     <section id='communityService' className='CommunityService'>
       <div className='title'>
-        <h3 className='header'>Community Service</h3>
-        <h6 className='description'>Giving back to the community</h6>
+        <div className='title title-with-background'>
+          <h3 className='header'>Community Service</h3>
+          <h6 className='description'>Giving back to the community</h6>
+        </div>
         <TitleBar />
       </div>
 
-      <Container>
+      <Container className='communityservice-section'>
         <Row>
           <Col>
             <Card className='work-card'>
