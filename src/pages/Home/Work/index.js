@@ -38,7 +38,7 @@ function Work () {
 
         <Container className='work-section'>
           <Row>
-            <Col>
+            <Col className='left'>
               <Link to='/work/amazon'>
                 <Card className='work-card'>
                   <Card.Img src={AmazonCardImage} />

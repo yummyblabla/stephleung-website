@@ -11,7 +11,7 @@ function Header () {
   return (
     <Navbar collapseOnSelect expand='sm' className='Header'>
       <Nav.Link as={NavLink} to='/' className='navLink' id='no-underline'>
-        <h4 className='HeaderName'>Steph Leung</h4>
+        <h5 className='HeaderName'>Steph Leung</h5>
       </Nav.Link>
 
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />

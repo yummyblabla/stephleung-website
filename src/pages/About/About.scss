@@ -41,4 +41,14 @@
   .about-image {
     width: 75%;
   }
+
+  .about-link {
+    color: $hover !important;
+    text-decoration: underline !important;
+    font-weight: 700;
+  }
+
+  .about-link:hover {
+    cursor: pointer;
+  }
 }

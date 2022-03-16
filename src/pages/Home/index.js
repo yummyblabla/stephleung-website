@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -11,6 +11,9 @@ import DesignThinking from './DesignThinking'
 import Work from './Work'
 
 function Home () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <div className='Home'>
       <section id='intro' className='Intro'>

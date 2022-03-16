@@ -4,27 +4,27 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import './UnderConstruction.scss'
+import './NotFound.scss'
 import TitleBar from '../../components/TitleBar'
 
-function UnderConstruction () {
+function NotFound () {
   useEffect(() => {
     window.scrollTo(0, 0)
   })
 
   return (
-    <section id='construction' className='Construction'>
+    <section id='notfound' className='NotFound'>
       <div className='title'>
         <div className='title title-with-background'>
-          <h2 className='title-header'>Under Construction</h2>
-          <h4 className='description'>Please check back later</h4>
+          <h2 className='title-header'>A picture is worth a thousand words</h2>
+          <h4 className='description'>Can&apos;t seem to find your page</h4>
         </div>
         <div className='title titlebar-with-background'>
           <TitleBar />
         </div>
       </div>
       <div className='background'>
-        <Container className='construction-section'>
+        <Container className='notfound-section'>
           <Row>
             <Col>
               <div className='icon-container'>
@@ -32,7 +32,7 @@ function UnderConstruction () {
                   style={{ width: 400, height: 400 }}
                   trigger='loop'
                   colors='primary:#000000,secondary:#ee4a7b'
-                  src='https://cdn.lordicon.com/cvpqeffe.json'
+                  src='https://cdn.lordicon.com/wxnxiano.json'
                 />
               </div>
             </Col>
@@ -44,4 +44,4 @@ function UnderConstruction () {
   )
 }
 
-export default UnderConstruction
+export default NotFound

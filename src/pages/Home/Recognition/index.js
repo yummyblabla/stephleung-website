@@ -7,6 +7,7 @@ import './Recognition.scss'
 import TitleBar from '../../../components/TitleBar'
 
 import StimulusImage from '../../../assets/workCardImages/stimulus.png'
+import { Link } from 'react-router-dom'
 
 function Recognition () {
   return (
@@ -37,7 +38,9 @@ function Recognition () {
               </p>
             </Col>
             <Col>
-              <img src={StimulusImage} />
+              <Link to='community/stimulus'>
+                <img className='work-card' src={StimulusImage} />
+              </Link>
             </Col>
           </Row>
         </Container>

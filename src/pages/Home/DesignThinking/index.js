@@ -25,7 +25,7 @@ function DesignThinking () {
 
       <Container className='designthinking-section'>
         <Row>
-          <Col>
+          <Col className='card-block'>
             <lord-icon
               style={LORD_ICON_STYLE}
               trigger='hover'
@@ -40,7 +40,7 @@ function DesignThinking () {
               company culture, reputation and brand personality?
             </p>
           </Col>
-          <Col>
+          <Col className='card-block'>
             <lord-icon
               style={LORD_ICON_STYLE}
               trigger='hover'
@@ -56,7 +56,7 @@ function DesignThinking () {
               identify ideal scenarios on existing pain points.
             </p>
           </Col>
-          <Col>
+          <Col className='card-block'>
             <lord-icon
               style={LORD_ICON_STYLE}
               trigger='hover'
@@ -73,7 +73,7 @@ function DesignThinking () {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col className='card-block'>
             <lord-icon
               style={LORD_ICON_STYLE}
               trigger='hover'
@@ -89,7 +89,7 @@ function DesignThinking () {
               ask for feedback on assumptions.
             </p>
           </Col>
-          <Col>
+          <Col className='card-block'>
             <lord-icon
               style={LORD_ICON_STYLE}
               trigger='hover'
@@ -104,7 +104,7 @@ function DesignThinking () {
               and opinion.
             </p>
           </Col>
-          <Col>
+          <Col className='card-block'>
             <lord-icon
               style={LORD_ICON_STYLE}
               trigger='hover'

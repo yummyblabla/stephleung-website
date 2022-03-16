@@ -15,6 +15,8 @@ import CMG from './pages/WorkPages/CMG'
 import VPL from './pages/CommunityPages/VPL'
 import YMCA from './pages/CommunityPages/YMCA'
 import CPCH from './pages/CommunityPages/CPCH'
+import Stimulus from './pages/CommunityPages/Stimulus'
+import NotFound from './pages/NotFound'
 
 import Grid from './components/Grid'
 
@@ -37,14 +39,15 @@ function App () {
           <Route path='expedia' element={<Expedia />} />
           <Route path='bitesquad' element={<Bitesquad />} />
           <Route path='cmg' element={<CMG />} />
-          <Route path='*' element={<div>nothing</div>} />
+          <Route path='*' element={<NotFound />} />
         </Route>
 
         <Route path='/community'>
           <Route path='vpl' element={<VPL />} />
           <Route path='ymca' element={<YMCA />} />
           <Route path='cpch' element={<CPCH />} />
-          <Route path='*' element={<div>nothing</div>} />
+          <Route path='stimulus' element={<Stimulus />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
       <Footer />

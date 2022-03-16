@@ -6,13 +6,24 @@
     margin: 4rem auto;
   }
 
+  .header {
+    font-weight: 600 !important;
+  }
+
   .contact-description {
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem auto;
     line-height: 3rem;
+    max-width: calc($desktop-max-width - 350px);
+  }
+  
+  .contact-form {
+    // max-width: calc($desktop-max-width - 400px);
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .contact-section {
-    max-width: calc($desktop-max-width - 200px);
+    max-width: calc($desktop-max-width - 300px);
     padding: 4rem 0; 
   }
 
@@ -30,11 +41,19 @@
     background-image: linear-gradient(to top left, $white 50%, $background calc(50% + 1px));
   }
 
+  .form-label {
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
 
   .send-button {
     background-color: $hover;
     border: none;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 0.5rem 2rem;
+  }
+  
+  .send-button:hover {
+    background-color: $hover;
   }
 }

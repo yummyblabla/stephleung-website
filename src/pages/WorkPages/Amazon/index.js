@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Password from '../../Password'
 import UnderConstruction from '../../UnderConstruction'
 
 function Amazon () {
-  return <UnderConstruction />
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+  return <Password ProtectedPage={UnderConstruction} />
 }
 
 export default Amazon

@@ -25,7 +25,7 @@ function CommunityService () {
 
       <Container className='communityservice-section'>
         <Row>
-          <Col>
+          <Col className='left'>
             <Link to='/community/ymca'>
               <Card className='work-card'>
                 <Card.Img src={YMCACardImage} />
@@ -60,7 +60,7 @@ function CommunityService () {
               </Card>
             </Link>
           </Col>
-          <Col>
+          <Col className='right'>
             <Link to='/community/cpch'>
               <Card className='work-card'>
                 <Card.Img src={CPCHCardImage} />

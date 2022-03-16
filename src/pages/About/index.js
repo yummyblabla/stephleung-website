@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Typist from 'react-typist'
 
 import './About.scss'
 
 import AboutImage from '../../assets/about/selfprotrait_edited.png'
 
 function About () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <div className='About'>
       <section id='intro' className='intro'>
         <Container>
           <Row>
             <Col>
-              <h1 className='title'>👋 Nice to meet you!</h1>
+              <Typist cursor={{ show: false }}>
+                <h1 className='title'>👋 Nice to meet you!</h1>
+              </Typist>
               <h2>I design digital experiences.</h2>
             </Col>
           </Row>
@@ -28,10 +34,17 @@ function About () {
             <Row>
               <Col>
                 <p>
-                  Having previously worked at Amazon and Expedia, Steph is a
-                  self-starter who loves to solve creative and user-centered
-                  problems. She strives to design impactful digital experiences
-                  with empathy and accessibility in mind.
+                  Having previously worked at{' '}
+                  <a className='about-link' href='https://www.amazon.com/'>
+                    Amazon
+                  </a>{' '}
+                  and{' '}
+                  <a className='about-link' href='https://www.expedia.com/'>
+                    Expedia
+                  </a>
+                  , Steph is a self-starter who loves to solve creative and
+                  user-centered problems. She strives to design impactful
+                  digital experiences with empathy and accessibility in mind.
                   <br />
                   <br />
                   With a big heart and a small ego, she focuses on her craft and
