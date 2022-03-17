@@ -1,11 +1,22 @@
 @import '../../index.scss';
 
 .About {
-  margin: 4rem auto;
+  @include respond-to('small') {
+    margin-top: 2rem auto 4rem auto;
+  }
+  @include respond-to('large') {
+    margin-top: 4rem auto;
+  }
 
   .intro {
     max-width: $desktop-max-width;
-    margin: 4rem auto;
+
+    @include respond-to('small') {
+      margin: 1rem 0 0 0.5rem;
+    }
+    @include respond-to('large') {
+      margin: 4rem auto;
+    }
   }
   .title {
     font-weight: 600 !important;
@@ -19,13 +30,34 @@
   }
 
   .top-ramp {
-    height: 7rem;
-    background-image: linear-gradient(to bottom right, $white 50%, $background calc(50% + 1px));
+    @include respond-to('small') {
+      height: 4rem;
+    }
+
+    @include respond-to('large') {
+      height: 7rem;
+    }
+
+    background-image: linear-gradient(
+      to bottom right,
+      $white 50%,
+      $background calc(50% + 1px)
+    );
   }
 
   .bottom-ramp {
-    height: 7rem;
-    background-image: linear-gradient(to top left, $white 50%, $background calc(50% + 1px));
+    @include respond-to('small') {
+      height: 4rem;
+    }
+
+    @include respond-to('large') {
+      height: 7rem;
+    }
+    background-image: linear-gradient(
+      to top left,
+      $white 50%,
+      $background calc(50% + 1px)
+    );
   }
 
   .background {
@@ -36,6 +68,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond-to('small') {
+      margin-bottom: 2rem;
+    }
+
+    @include respond-to('large') {
+      margin-bottom: 0;
+    }
   }
 
   .about-image {
@@ -50,5 +90,27 @@
 
   .about-link:hover {
     cursor: pointer;
+  }
+
+  .about-row {
+    display: flex;
+    @include respond-to('small') {
+      flex-direction: column-reverse;
+    }
+
+    @include respond-to('large') {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+
+  .about-extra {
+    @include respond-to('small') {
+      display: none;
+    }
+
+    @include respond-to('large') {
+      display: block;
+    }
   }
 }

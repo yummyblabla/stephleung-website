@@ -20,13 +20,19 @@ function Contact () {
 
   return (
     <div className='Contact'>
-      <section className='title'>
-        <Typist cursor={{ show: false }}>
-          <h1 className='header'>Let&apos;s get in touch!</h1>
-        </Typist>
-        <h2 className='description'>
-          I&apos;m always down for coffee chats ☕
-        </h2>
+      <section className='intro'>
+        <Container>
+          <Row>
+            <Col>
+              <Typist cursor={{ show: false }}>
+                <h1 className='header'>Let&apos;s get in touch!</h1>
+              </Typist>
+              <h2 className='description'>
+                I&apos;m always down for coffee chats ☕
+              </h2>
+            </Col>
+          </Row>
+        </Container>
       </section>
       <section>
         <div className='top-ramp' />

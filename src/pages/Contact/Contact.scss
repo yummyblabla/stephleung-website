@@ -1,30 +1,58 @@
 @import '../../index.scss';
 
 .Contact {
-  .title {
-    max-width: $desktop-max-width;
-    margin: 4rem auto;
+  @include respond-to('small') {
+    margin-top: 2rem auto 4rem auto;
+  }
+  @include respond-to('large') {
+    margin-top: 4rem auto;
   }
 
+  .intro {
+    max-width: $desktop-max-width;
+
+    @include respond-to('small') {
+      margin: 1rem 0 0 0.5rem;
+    }
+    @include respond-to('large') {
+      margin: 4rem auto;
+    }
+  }
   .header {
     font-weight: 600 !important;
   }
 
   .contact-description {
-    margin: 0 auto 3rem auto;
     line-height: 3rem;
     max-width: calc($desktop-max-width - 350px);
+
+    @include respond-to('small') {
+      margin: 1rem;
+    }
+    @include respond-to('large') {
+      margin: 0 auto 3rem auto;
+    }
   }
-  
+
   .contact-form {
     // max-width: calc($desktop-max-width - 400px);
-    padding-left: 100px;
-    padding-right: 100px;
+    @include respond-to('small') {
+      padding: 0 1.5rem;
+    }
+    @include respond-to('large') {
+      padding: 0 100px;
+    }
   }
 
   .contact-section {
     max-width: calc($desktop-max-width - 300px);
-    padding: 4rem 0; 
+    
+    @include respond-to('small') {
+      padding: 1rem 0;
+    }
+    @include respond-to('large') {
+      padding: 4rem 0;
+    }
   }
 
   .background {
@@ -32,13 +60,33 @@
   }
 
   .top-ramp {
-    height: 7rem;
-    background-image: linear-gradient(to bottom right, $white 50%, $background calc(50% + 1px));
+    @include respond-to('small') {
+      height: 4rem;
+    }
+
+    @include respond-to('large') {
+      height: 7rem;
+    }
+    background-image: linear-gradient(
+      to bottom right,
+      $white 50%,
+      $background calc(50% + 1px)
+    );
   }
 
   .bottom-ramp {
-    height: 7rem;
-    background-image: linear-gradient(to top left, $white 50%, $background calc(50% + 1px));
+    @include respond-to('small') {
+      height: 4rem;
+    }
+
+    @include respond-to('large') {
+      height: 7rem;
+    }
+    background-image: linear-gradient(
+      to top left,
+      $white 50%,
+      $background calc(50% + 1px)
+    );
   }
 
   .form-label {
@@ -52,7 +100,7 @@
     margin-top: 1.5rem;
     padding: 0.5rem 2rem;
   }
-  
+
   .send-button:hover {
     background-color: $hover;
   }

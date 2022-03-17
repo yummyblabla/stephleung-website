@@ -1,7 +1,14 @@
 @import '../../index.scss';
 
 .Construction {
-  margin: 4rem auto;
+  @include respond-to('small') {
+    margin: 2rem auto 0 auto;
+  }
+
+  @include respond-to('large') {
+    margin: 4rem auto;
+  }
+  
 
   .title {
     display: flex;
@@ -22,6 +29,14 @@
       $white 50%,
       $background calc(50% + 1px)
     );
+
+    @include respond-to('small') {
+      text-align: center;
+    }
+  
+    @include respond-to('large') {
+      text-align: left;
+    }
   }
 
   .titlebar-with-background {
@@ -39,12 +54,28 @@
 
   .background {
     background-color: $background;
+
+    @include respond-to('small') {
+      margin-bottom: -50px;
+    }
+  
+    @include respond-to('large') {
+      margin-bottom: 0;
+    }
   }
 
   .icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond-to('small') {
+      position: relative;
+      top: -50px;
+    }
+  
+    @include respond-to('large') {
+      position: static;
+    }
   }
 
   .bottom-ramp {

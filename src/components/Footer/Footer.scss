@@ -1,7 +1,29 @@
+@import '../../index.scss';
+
 .Footer {
   max-width: 1200px;
-  margin: 3rem auto;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond-to('small') {
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  @include respond-to('large') {
+    margin: 3rem auto;
+    text-align: left;
+  }
+
+  .mobile-br {
+    @include respond-to('small') {
+      display: block;
+    }
+  
+    @include respond-to('large') {
+      display: none;
+    }
+  }
 }

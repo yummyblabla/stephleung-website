@@ -31,7 +31,7 @@ function About () {
         <div className='top-ramp' />
         <div className='background'>
           <Container className='about-section'>
-            <Row>
+            <Row className='about-row'>
               <Col>
                 <p>
                   Having previously worked at{' '}
@@ -65,7 +65,7 @@ function About () {
         <div className='bottom-ramp' />
       </section>
 
-      <section>
+      <section id='about-extra' className='about-extra'>
         <div>
           <Container className='about-section'>
             <Row>
