@@ -14,7 +14,15 @@ function Header () {
         <h5 className='HeaderName'>Steph Leung</h5>
       </Nav.Link>
 
-      <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+      <Navbar.Toggle aria-controls='responsive-navbar-nav'>
+        <span>
+          <lord-icon
+            style={{ width: 50, height: 50 }}
+            trigger='morph-two-way'
+            src='https://cdn.lordicon.com/jtqpkhoh.json'
+          />
+        </span>
+      </Navbar.Toggle>
       <Navbar.Collapse
         id='responsive-navbar-nav'
         className='justify-content-end'
@@ -30,16 +38,18 @@ function Header () {
               <p className='link'>Contact</p>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href='https://www.instagram.com/x5t3ph/'>
-              <InstagramLogo className='social-icon' />
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href='https://www.linkedin.com/in/stephcyleung/'>
-              <LinkedinLogo className='social-icon' />
-            </Nav.Link>
-          </Nav.Item>
+          <div className='socials'>
+            <Nav.Item>
+              <Nav.Link href='https://www.instagram.com/x5t3ph/'>
+                <InstagramLogo className='social-icon' />
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href='https://www.linkedin.com/in/stephcyleung/'>
+                <LinkedinLogo className='social-icon' />
+              </Nav.Link>
+            </Nav.Item>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

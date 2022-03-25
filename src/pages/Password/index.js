@@ -32,7 +32,7 @@ function Password ({ ProtectedPage }) {
 
   const passwordCheck = (e) => {
     e.preventDefault()
-    if (password === 'getinspired') {
+    if (password === 'stayinspired') {
       localStorage.setItem('validated', true)
       setValidated(true)
     } else {

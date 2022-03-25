@@ -3,8 +3,14 @@
 .Home {
   .Intro {
     max-width: $desktop-max-width;
-    margin: 4rem auto;
-    margin-bottom: 2rem;
+
+    @include respond-to('small') {
+      margin: 1rem auto 2rem auto;
+    }
+  
+    @include respond-to('large') {
+      margin: 4rem auto 2rem auto;
+    }
   }
   
   .title {

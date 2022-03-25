@@ -79,11 +79,18 @@
   }
 
   .bottom-ramp {
-    height: 7rem;
     background-image: linear-gradient(
       to top left,
       $white 50%,
       $background calc(50% + 1px)
     );
+
+    @include respond-to('small') {
+      height: 4rem;
+    }
+
+    @include respond-to('large') {
+      height: 7rem;
+    }
   }
 }

@@ -1,12 +1,11 @@
 @import '../../index.scss';
 
 .Header {
-  padding-left: 40px;
   padding-top: 20px !important;
-  padding-right: 40px;
 
   .HeaderName {
     font-weight: 500 !important;
+    padding-left: 40px;
   }
 
   @include respond-to('small') {
@@ -29,6 +28,7 @@
 
   .nav-link {
     padding-top: 0px;
+    padding-bottom: 0px;
     font-weight: 500 !important;
   }
 
@@ -40,13 +40,66 @@
     width: 24px;
     height: 24px;
     padding-top: 0px;
+    margin: 0 0.25rem;
   }
 
   .social-icon:hover {
     fill: $hover;
   }
 
+  button.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin-right: 40px;
+  }
+
   #no-underline {
     text-decoration: none !important;
+  }
+
+  #responsive-navbar-nav {
+    @include respond-to('small') {
+      margin-top: 0.5rem;
+      flex-direction: column;
+    }
+
+    @include respond-to('large') {
+      margin-top: 0;
+      flex-direction: inherit;
+    }
+  }
+
+  .navbar-nav {
+    @include respond-to('small') {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+      // margin-right: 40px;
+      align-items: center;
+      height: 3rem;
+    }
+
+    @include respond-to('large') {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      padding-right: 40px;
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+
+    @include respond-to('small') {
+      justify-content: space-between;
+    }
+
+    @include respond-to('large') {
+      justify-content: inherit;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }
