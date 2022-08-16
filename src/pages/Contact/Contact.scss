@@ -72,6 +72,8 @@
       $white 50%,
       $background calc(50% + 1px)
     );
+    z-index: -10;
+    position: relative;
   }
 
   .bottom-ramp {
@@ -87,6 +89,8 @@
       $white 50%,
       $background calc(50% + 1px)
     );
+    z-index: -10;
+    position: relative;
   }
 
   .form-label {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,12 +10,21 @@ import StimulusImage from '../../../assets/workCardImages/stimulus.png'
 import { Link } from 'react-router-dom'
 
 function Recognition () {
+  const [height, setHeight] = useState(0)
+  const ref = useRef(null)
+  useEffect(() => {
+    setHeight(ref.current.clientHeight)
+  }, [ref])
+
   return (
     <section id='recognition' className='Recognition'>
       <div className='title'>
-        <div className='title title-with-background'>
-          <h3 className='header'>Recognition</h3>
-          <h6 className='description'>Awarded concept application</h6>
+        <div className='title' ref={ref}>
+          <div className='title-with-background' style={{ height }}></div>
+          <div className='title title-text-container'>
+            <h3 className='header'>Recognition</h3>
+            <h6 className='description'>Awarded concept application</h6>
+          </div>
         </div>
         <div className='title titlebar-with-background'>
           <TitleBar />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -13,12 +13,21 @@ import YMCACardImage from '../../../assets/workCardImages/ymca.png'
 import CPCHCardImage from '../../../assets/workCardImages/cpch.png'
 
 function CommunityService () {
+  const [height, setHeight] = useState(0)
+  const ref = useRef(null)
+  useEffect(() => {
+    setHeight(ref.current.clientHeight)
+  }, [ref])
+
   return (
     <section id='communityService' className='CommunityService'>
       <div className='title'>
-        <div className='title title-with-background'>
-          <h3 className='header'>Community Service</h3>
-          <h6 className='description'>Giving back to the community</h6>
+        <div className='title' ref={ref}>
+          <div className='title-with-background' style={{ height }}></div>
+          <div className='title title-text-container'>
+            <h3 className='header'>Community Service</h3>
+            <h6 className='description'>Giving back to the community</h6>
+          </div>
         </div>
         <TitleBar />
       </div>

@@ -18,6 +18,8 @@
       $white 50%,
       $background calc(50% + 1px)
     );
+    z-index: -10;
+    position: absolute;
   }
   .titlebar-with-background {
     width: 100%;

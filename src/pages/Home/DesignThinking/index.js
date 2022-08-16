@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import './DesignThinking.scss'
 
@@ -13,12 +13,20 @@ const LORD_ICON_STYLE = {
 }
 
 function DesignThinking () {
+  const [height, setHeight] = useState(0)
+  const ref = useRef(null)
+  useEffect(() => {
+    setHeight(ref.current.clientHeight)
+  }, [ref])
   return (
     <section id='designThinking' className='DesignThinking'>
       <div className='title'>
-        <div className='title title-with-background'>
-          <h3 className='header'>Design Thinking</h3>
-          <h6 className='description'>My creative process</h6>
+        <div className='title' ref={ref}>
+          <div className='title-with-background' style={{ height }}></div>
+          <div className='title title-text-container'>
+            <h3 className='header'>Design Thinking</h3>
+            <h6 className='description'>My creative process</h6>
+          </div>
         </div>
         <TitleBar />
       </div>

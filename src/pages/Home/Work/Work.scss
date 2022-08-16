@@ -18,6 +18,8 @@
       $white 50%,
       $background calc(50% + 1px)
     );
+    z-index: -10;
+    position: absolute;
   }
 
   .titlebar-with-background {
@@ -41,10 +43,12 @@
   .header {
     margin-bottom: 0.5rem;
     font-weight: bold !important;
+    z-index: 1 !important;
   }
 
   .description {
     margin-bottom: 1rem;
+    z-index: 1;
   }
 
   .work-section {
@@ -96,13 +100,17 @@
   }
 
   .left {
-    margin-right: 2rem;
-    padding-right: 0;
+    @include respond-to('large') {
+      margin-right: 2rem;
+      padding-right: 0;
+    }
   }
 
   .right {
-    margin-top: 5rem;
-    margin-left: 2rem;
-    padding-left: 0;
+    @include respond-to('large') {
+      margin-top: 5rem;
+      margin-left: 2rem;
+      padding-left: 0;
+    }
   }
 }

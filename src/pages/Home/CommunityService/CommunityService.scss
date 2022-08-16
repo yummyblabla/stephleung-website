@@ -18,11 +18,14 @@
       $white 50%,
       $background calc(50% + 1px)
     );
+    z-index: -10;
+    position: absolute;
   }
 
   .header {
     margin-bottom: 0.5rem;
     font-weight: bold !important;
+    z-index: auto;
   }
 
   .description {

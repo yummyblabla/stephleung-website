@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -14,12 +14,21 @@ import ExpediaCardImage from '../../../assets/workCardImages/expedia.png'
 import './Work.scss'
 
 function Work () {
+  const [height, setHeight] = useState(0)
+  const ref = useRef(null)
+  useEffect(() => {
+    setHeight(ref.current.clientHeight)
+  }, [ref])
+
   return (
     <section id='work' className='Work'>
       <div className='title'>
-        <div className='title title-with-background'>
-          <h3 className='header'>Work</h3>
-          <h6 className='description'>A showcase of my portfolio</h6>
+        <div className='title' ref={ref}>
+          <div className='title-with-background' style={{ height }}></div>
+          <div className='title title-text-container'>
+            <h3 className='header'>Work</h3>
+            <h6 className='description'>A showcase of my portfolio</h6>
+          </div>
         </div>
 
         <div className='title titlebar-with-background'>
