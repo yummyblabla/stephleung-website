@@ -1,34 +1,36 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+// import { Routes, Route } from 'react-router-dom'
 
-import Header from './components/Header'
-import Footer from './components/Footer'
+// import Header from './components/Header'
+// import Footer from './components/Footer'
 
-import Home from './pages/Home'
-import Contact from './pages/Contact'
-import About from './pages/About'
+// import Home from './pages/Home'
+// import Contact from './pages/Contact'
+// import About from './pages/About'
 
-import Amazon from './pages/WorkPages/Amazon'
-import Expedia from './pages/WorkPages/Expedia'
-import Bitesquad from './pages/WorkPages/Bitesquad'
-import CMG from './pages/WorkPages/CMG'
-import VPL from './pages/CommunityPages/VPL'
-import YMCA from './pages/CommunityPages/YMCA'
-import CPCH from './pages/CommunityPages/CPCH'
-import Stimulus from './pages/CommunityPages/Stimulus'
-import NotFound from './pages/NotFound'
+// import Amazon from './pages/WorkPages/Amazon'
+// import Expedia from './pages/WorkPages/Expedia'
+// import Bitesquad from './pages/WorkPages/Bitesquad'
+// import CMG from './pages/WorkPages/CMG'
+// import VPL from './pages/CommunityPages/VPL'
+// import YMCA from './pages/CommunityPages/YMCA'
+// import CPCH from './pages/CommunityPages/CPCH'
+// import Stimulus from './pages/CommunityPages/Stimulus'
+// import NotFound from './pages/NotFound'
 
-import Grid from './components/Grid'
+// import Grid from './components/Grid'
 
 import { loadAnimation } from 'lottie-web'
 import { defineLordIconElement } from 'lord-icon-element'
+import StaticPage from './pages/StaticPage'
 
 defineLordIconElement(loadAnimation)
 
 function App () {
   return (
     <React.Fragment>
-      <Header />
+      <StaticPage />
+      {/* <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
@@ -51,7 +53,7 @@ function App () {
         </Route>
       </Routes>
       <Footer />
-      <Grid />
+      <Grid /> */}
     </React.Fragment>
   )
 }
