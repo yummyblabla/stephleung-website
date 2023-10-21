@@ -1,26 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.73155fc2.css",
-    "main.js": "/static/js/main.917c0746.js",
+    "main.css": "/static/css/main.3d5ac258.css",
+    "main.js": "/static/js/main.fd2827e4.js",
     "static/js/787.3eb1d877.chunk.js": "/static/js/787.3eb1d877.chunk.js",
-    "static/media/selfprotrait_edited.png": "/static/media/selfprotrait_edited.4487675122089b71a6c4.png",
-    "static/media/stimulus.png": "/static/media/stimulus.fc8f36f258d1f1be6795.png",
-    "static/media/ymca.png": "/static/media/ymca.040f15d9c673e3de4ef9.png",
-    "static/media/bitesquad.png": "/static/media/bitesquad.c60cf2d2c8e220c6a088.png",
-    "static/media/cpch.png": "/static/media/cpch.117547e4e90747d3849d.png",
-    "static/media/vpl.png": "/static/media/vpl.0bebb21fa87ddbce2930.png",
-    "static/media/amazon.png": "/static/media/amazon.52b39b3c8a2a61fe3644.png",
-    "static/media/expedia.png": "/static/media/expedia.3e63cc09ea605deab2e9.png",
-    "static/media/cmg.png": "/static/media/cmg.1e2282c491537ebcd717.png",
-    "static/media/linkedin.svg": "/static/media/linkedin.9e1900c290a41caee171ac4e68ad4e71.svg",
-    "static/media/instagram.svg": "/static/media/instagram.3c28ceaa0dcf2d5368006ed32d7f0040.svg",
     "index.html": "/index.html",
-    "main.73155fc2.css.map": "/static/css/main.73155fc2.css.map",
-    "main.917c0746.js.map": "/static/js/main.917c0746.js.map",
+    "main.3d5ac258.css.map": "/static/css/main.3d5ac258.css.map",
+    "main.fd2827e4.js.map": "/static/js/main.fd2827e4.js.map",
     "787.3eb1d877.chunk.js.map": "/static/js/787.3eb1d877.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73155fc2.css",
-    "static/js/main.917c0746.js"
+    "static/css/main.3d5ac258.css",
+    "static/js/main.fd2827e4.js"
   ]
 }
